@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"watch": true,
+		"target": "ESNext",
+		"outDir": "./dist"
+	},
+	"include": ["./src"]
+}
