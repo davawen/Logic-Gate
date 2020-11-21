@@ -4,5 +4,5 @@
 		"target": "ESNext",
 		"outDir": "./dist"
 	},
-	"include": ["./src"]
+	"include": ["./src", "p5.d.ts", "p5.global-mode.d.ts"]
 }

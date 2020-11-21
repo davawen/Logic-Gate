@@ -215,7 +215,7 @@ function mousePressed() {
                     for (let i = 0; i < gates.length; i++) //Loop over gates
                      {
                         let g = gates[i];
-                        if (g.overlap(pmouseX, pmouseY)) {
+                        if (g.overlap(mouseX, mouseY)) {
                             dragging = g;
                             break;
                         }
@@ -251,7 +251,7 @@ function mousePressed() {
             else {
                 for (let i = 0; i < gates.length; i++) {
                     let g = gates[i];
-                    if (g.overlap(pmouseX, pmouseY)) {
+                    if (g.overlap(mouseX, mouseY)) {
                         gates.push(new Gate(mouseX, mouseY, g.struct));
                         dragging = gates[gates.length - 1];
                         break;
@@ -292,10 +292,10 @@ function mouseReleased() {
                         }
                     }
                 }
-                dragging = null;
                 break;
             }
     }
+    dragging = null;
 }
 function mouseDragged() {
     if (dragging instanceof Gate) {
